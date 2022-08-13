@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="registration-for">
+        <form action="reg_usuario.html"method="post">
+            <h3 class="text-center">Ingresar</h3>
+    
+            <div class="form-group">
+                <i class="fa-solid fa-user " id="icon"></i>
+                <input class="form-control item" type="text" name="username" maxlength="15" minlength="4" 
+                pattern="[a-zA-Z0-9_,.-*$]" id="username" placeholder="Usuario" required>
+
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <i class="fa-solid fa-lock" id="icon"></i>
+                <input class="form-control item" type="password" name="password" 
+                maxlength="15" minlength="8" placeholder="Contraseña"required>
+                
+
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <i class="fa-solid fa-envelope" id="icon"></i>
+                <input class="form-control item" type="email" name="correo electronico" 
+                maxlength="40" minlength="15" placeholder="correo electronico"required>
+
+            </div>
+
+            <br>
+
+            <div class="form-group">
+                <button class="btn-primary btn-block"type="submit">Iniciar</button>
+                
+            </div>
+        
+
+            
+        </form>
+            
+
+           
+
+    </div>
+
+</body>
+</html>

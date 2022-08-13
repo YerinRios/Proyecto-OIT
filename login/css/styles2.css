@@ -1,0 +1,33 @@
+body{
+    background-color:rgb(228, 228, 228);
+    font-family:'Times New Roman', Times, serif;
+    align-items: center;
+
+}
+.container{
+    background-color:rgb(248, 248, 248);
+
+}
+
+.input{
+    padding: 8px 16px ;
+    margin-top: 32px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color:rgb(78, 78, 78);
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.names{
+    width: 10%;
+    padding: 8px 16px ;
+    margin-top: 32px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color:rgb(78, 78, 78);
+    background-color: rgb(255, 255, 255);
+    
+
+
+}

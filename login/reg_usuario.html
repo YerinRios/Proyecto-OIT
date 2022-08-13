@@ -10,19 +10,21 @@
 <body>
     
     <form action="form_action">
-        <div class="container">
+        <div >
             <fieldset >
 
                 <legend>Datos personales</legend>
 
-                <div >
-
+                <fieldset>
+                    <legend>nombre completo</legend>
+                 <div > <!-- nombre completo(primera linea)-->
+                   
                     <label for="first_Name">Primer Nombre</label>
                     <input  class="names" type="text" name="first_Name" id="first_Name" placeholder="Primer Nombre" 
                     minlength="3" maxlength="45" required>
 
                     <label for="second_name">Segundo Nombre</label>
-                    <input class="names"type="text" name="two_name" id="two_name" placeholder="Segundo Nombre" 
+                    <input class="names"type="text" name="second_name" id="second_name" placeholder="Segundo Nombre" 
                     minlength="3" maxlength="45" required>
 
                     <label for="first_surname">Primer Apellido</label>
@@ -33,97 +35,136 @@
                     <input class="names" type="text" name="second_surname" id="second_surname" placeholder="Segundo Apellido" 
                     minlength="3" maxlength="40" required>
 
-                </div>
-
+                 </div> 
+                </fieldset>
                 <br>
 
-                <label for="date_of_birth">Fecha de Nacimiento</label> 
-                <input class="input" type="date" name="date_of_birth" id="date_of_birth" required>
+                <fieldset>
+                    <legend>Informacion de nacimiento</legend>
+                <div > <!-- Informacion de nacimiento (segunda linea)-->
 
-                <label for="age">Edad</label>
-                <input class="input" type="number" name="age" id="age" placeholder="Edad" required>
+                    <label for="date_of_birth">Fecha de Nacimiento</label> 
+                    <input class="input" type="date" name="date_of_birth" id="date_of_birth" required>
 
-                <label for="sex">Sexo</label>
-                <select class="input" name="sex" id="sex" required >
-                    <option value="M">Masculino</option>
-                    <option value="F">Femenino</option>
-                    <option value="NI">No Identificado</option>
-                </select>
+                    <label for="age">Edad</label>
+                    <input class="input" type="number" name="age" id="age" placeholder="Edad" required>
 
-                <br>
-
-                <label for="document_type">Tipo de Documento</label>   
-                    <select class="input" name="document_type" id="document_type" required>
-                    <option disabled selected>Seleccione...</option>
-                    <option value="CC">CEDULA DE CIUDADANIA</option>
-                    <option value="CEC">CEDULA DE EXTRANGERIA COLOMBIANA</option>
-                    <option value="CE">CEDULA EXTRANGERA</option>
-                    <option value="PAS">PASAPORTE</option>
-                    <option value="REC">REGISTRO CIVIL</option>
-                    <option value="TI">TARGETA DE IDENTIDAD</option>
+                    <label for="sex">Sexo</label>
+                    <select class="input" name="sex" id="sex" required >
+                        <option disabled selected>Seleccione...</option>
+                        <option value="M">Masculino</option>
+                        <option value="F">Femenino</option>
+                        <option value="NI">No Identificado</option>
                     </select>
+                </div>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Informacion de identificacion </legend>
+                <div > <!-- informacion de identificacion (tercera linea)-->
+                    <label for="document_type">Tipo de Documento</label>   
+                        <select class="input" name="document_type" id="document_type" required>
+                        <option disabled selected>Seleccione...</option>
+                        <option value="CC">CEDULA DE CIUDADANIA</option>
+                        <option value="CEC">CEDULA DE EXTRANGERIA COLOMBIANA</option>
+                        <option value="CE">CEDULA EXTRANGERA</option>
+                        <option value="PAS">PASAPORTE</option>
+                        <option value="REC">REGISTRO CIVIL</option>
+                        <option value="TI">TARGETA DE IDENTIDAD</option>
+                        </select>
+                
+                    <label for="document_number">Numero de documento</label>
+                    <input class="input" type="text" name="document_number" id="document_number" placeholder="Numero de Documento" 
+                    minlength="5" maxlength="40" required>
+
+
+                    <label for="expedition_city">Ciudad de expedición</label>
+                    <input class="input" type="text" name="expedition_city" id="expedition_city" placeholder="Ciudad de expedición" 
+                    minlength="7" maxlength="40" required>
             
-                <label for="document_number">Numero de documento</label>
-                <input class="input" type="text" name="document_number" id="document_number" placeholder="Numero de Documento" 
-                minlength="5" maxlength="40" required>
-
-
-                <label for="expedition_city">Ciudad de expedición</label>
-                <input class="input" type="text" name="expedition_city" id="expedition_city" placeholder="Ciudad de expedición" 
-                  minlength="7" maxlength="40" required>
-        
+                </div>
+                </fieldset>
+                <br>
                 
+                <fieldset>
+                    <legend>Informacion de residencia</legend>
+                <div > <!-- informacion de residencia (cuarta linea)-->
+
+                    <label for="country">País</label>
+                    <input class="input" type="text" name="country" id="country" placeholder="País" 
+                    minlength="5" maxlength="40" required>
+
+                    <label for="department">Departamento</label>
+                    <input class="input" type="text" name="department" id="department" placeholder="Departemento" 
+                    minlength="5" maxlength="40" required>
+
+                    <label for="city">Ciudad</label>
+                    <input class="input" type="text" name="city" id="city" placeholder="Ciudad" 
+                    minlength="5" maxlength="40" required>
+
+                    <label for="neighborhood">Barrio</label>
+                    <input class="input" type="text" name="neighborhood" id="neighborhood" placeholder="Barrio" 
+                    minlength="5" maxlength="40" required>
+                </div>
+                </fieldset>
                 <br>
 
-                <label for="country">País</label>
-                <input class="input" type="text" name="country" id="country" placeholder="País" 
-                minlength="5" maxlength="40" required>
+                <fieldset>
+                    <legend>Informacion de contacto </legend>
+                <div > <!-- informacion de contacto (quinta linea)-->
+                    <label for="phone">Telefono</label>
+                    <input class="input" type="tel" name="phone" id="phone" placeholder="Telefono Fijo"
+                    minlength="5" maxlength="10" required>
 
-                <label for="department">Departamento</label>
-                <input class="input" type="text" name="department" id="department" placeholder="Departemento" 
-                minlength="5" maxlength="40" required>
+                    <label for="cell_phone">Celular</label>
+                    <input class="input" type="tel" name="cell_phone" id="cell_phone" placeholder="Celular"
+                    minlength="8" maxlength="20" required>
 
-                <label for="city">Ciudad</label>
-                <input class="input" type="text" name="city" id="city" placeholder="Ciudad" 
-                minlength="5" maxlength="40" required>
-
-                <label for="neighborhood">Barrio</label>
-                <input class="input" type="text" name="neighborhood" id="neighborhood" placeholder="Barrio" 
-                minlength="5" maxlength="40" required>
-
+                    <label for="email">Correo Electronico</label>
+                    <input class="input" type="email" name="email" id="email" placeholder="example@email.com"
+                    minlength="15" maxlength="40" required>
+                </div>
+                </fieldset>
                 <br>
 
-                <label for="phone">Telefono</label>
-                <input class="input" type="number" name="phone" id="phone" placeholder="Telefono Fijo"
-                minlength="5" maxlength="8" required>
-
-                <label for="cell_phone">Celular</label>
-                <input class="input" type="number" name="cell_phone" id="cell_phone" placeholder="Celular"
-                minlength="8" maxlength="20" required>
-
-                <br>
-
-                <label for="study">Estudio</label>
-                <input class="input" type="text" name="study" id="study" placeholder="Estudio"
-                minlength="5" maxlength="40" required>
-
-                <label for="profession">Profesión</label>
-                <input class="input" type="text" name="profession" id="profession" placeholder="Profesión"
-                minlength="5" maxlength="40" required>
-
-                <label for="role">Rol</label>
-                <input class="input" type="text" name="role" id="role" placeholder="Rol"
-                minlength="5" maxlength="40" required>
+                <fieldset>
+                    <legend>Informacion laboral</legend>
+                <div > <!-- informacion laboral (sexta linea)-->
+                    <label for="academic_level">Nivel academico</label>
+                    <select class="input" name="academic_level" id="academic_level" required>
+                        <option disabled selected>Seleccione...</option>
+                        <option value="Preescolar">Preescolar</option>
+                        <option value="Primaria">Primaria</option>
+                        <option value="Secundaria">Secundaria</option>
+                        <option value="Bachillerato">Bachillerato</option>
+                        <option value="pregrado">Pregrado</option>
+                        <option value="postgrado">Postgrado</option>
+                        <option value="Maestria">Maestría</option>
+                        <option value="Doctorado">Doctorado</option>
+                        </select>
                 
+                    <label for="profession">Profesión</label>
+                    <input class="input" type="text" name="profession" id="profession" placeholder="Profesión"
+                    minlength="5" maxlength="40" required>
+
+                    <label for="role">Rol</label>
+                    <input class="input" type="text" name="role" id="role" placeholder="Rol"
+                    minlength="5" maxlength="40" required>
+                </div>
+                </fieldset>
                 <br>
 
-                <label for="email">Correo Electronico</label>
-                <input class="input" type="email" name="email" id="email" placeholder="usuario@"
-                minlength="15" maxlength="40" required>
-
+                <fieldset>
+                    <legend>Informacion de registro</legend>
+                <div > <!-- informacion de registro (septima linea)-->
                 <label for="registration_date">Fecha de registro</label>
-                <input class="input" type="date" name="registration_date" id="registration_date" placeholder="Fecha">
-            
+                <input class="input" type="date" name="registration_date" id="registration_date">
+
+                <label for="activation_date">Fecha de activación</label>
+                <input class="input" type="date" name="activation_date" id="activation_date" >
+                </div>
+                </fieldset>
 
             </fieldset>
 

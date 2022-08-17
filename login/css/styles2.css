@@ -2,17 +2,20 @@
     margin: 0px;
     padding: 0px;
 }
+
+html{
+    background: -webkit-linear-gradient(bottom right,#0F3D3E,#E2DCC8,#0F3D3E);
+
+}
 body{
     display: flex;
-    align-items: center;
-    background-image: url(../img/fondo\ negro.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     height: 100%;
-    background-color:rgb(228, 228, 228);
     font-family:'Times New Roman', Times, serif;
     font-size:large;
     padding: 2%;
+    
     
 
 }
@@ -38,6 +41,15 @@ legend{
 
   
 }
+#document_type{
+width: 250px;
+
+}
+
+#age{
+width: 30px;
+
+}
 
 .input{
     padding: 8px 16px ;
@@ -51,11 +63,13 @@ legend{
 
 .names{
     width: 10%;
+    height: 100%;
     padding: 8px 16px ;
     margin-top: 32px;
     border-radius: 5px;
     border: 1px solid black;
     color:rgb(78, 78, 78);
     background-color: rgb(255, 255, 255);
+    
 
 }

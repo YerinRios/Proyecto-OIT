@@ -14,9 +14,8 @@
             <fieldset >
 
                 <legend>Datos personales</legend>
+                <hr>
 
-                <fieldset>
-                    <legend>nombre completo</legend>
                  <div > <!-- nombre completo(primera linea)-->
                    
                     <label for="first_Name">Primer Nombre</label>
@@ -36,11 +35,10 @@
                     minlength="3" maxlength="40" required>
 
                  </div> 
-                </fieldset>
-                <br>
 
-                <fieldset>
-                    <legend>Informacion de nacimiento</legend>
+                <br>
+                <hr>
+
                 <div > <!-- Informacion de nacimiento (segunda linea)-->
 
                     <label for="date_of_birth">Fecha de Nacimiento</label> 
@@ -54,14 +52,12 @@
                         <option disabled selected>Seleccione...</option>
                         <option value="M">Masculino</option>
                         <option value="F">Femenino</option>
-                        <option value="NI">No Identificado</option>
+                        <option value="NI">No Binario</option>
                     </select>
                 </div>
-                </fieldset>
                 <br>
+                <hr>
 
-                <fieldset>
-                    <legend>Informacion de identificacion </legend>
                 <div > <!-- informacion de identificacion (tercera linea)-->
                     <label for="document_type">Tipo de Documento</label>   
                         <select class="input" name="document_type" id="document_type" required>
@@ -84,11 +80,9 @@
                     minlength="7" maxlength="40" required>
             
                 </div>
-                </fieldset>
                 <br>
+                <hr>
                 
-                <fieldset>
-                    <legend>Informacion de residencia</legend>
                 <div > <!-- informacion de residencia (cuarta linea)-->
 
                     <label for="country">País</label>
@@ -107,29 +101,25 @@
                     <input class="input" type="text" name="neighborhood" id="neighborhood" placeholder="Barrio" 
                     minlength="5" maxlength="40" required>
                 </div>
-                </fieldset>
                 <br>
+                <hr>
 
-                <fieldset>
-                    <legend>Informacion de contacto </legend>
                 <div > <!-- informacion de contacto (quinta linea)-->
                     <label for="phone">Telefono</label>
                     <input class="input" type="tel" name="phone" id="phone" placeholder="Telefono Fijo"
-                    minlength="5" maxlength="10" required>
+                    minlength="7" maxlength="12" required>
 
                     <label for="cell_phone">Celular</label>
                     <input class="input" type="tel" name="cell_phone" id="cell_phone" placeholder="Celular"
-                    minlength="8" maxlength="20" required>
+                    minlength="10" maxlength="15" required>
 
                     <label for="email">Correo Electronico</label>
                     <input class="input" type="email" name="email" id="email" placeholder="example@email.com"
-                    minlength="15" maxlength="40" required>
+                    minlength="10" maxlength="225" required>
                 </div>
-                </fieldset>
                 <br>
+                <hr>
 
-                <fieldset>
-                    <legend>Informacion laboral</legend>
                 <div > <!-- informacion laboral (sexta linea)-->
                     <label for="academic_level">Nivel academico</label>
                     <select class="input" name="academic_level" id="academic_level" required>
@@ -152,11 +142,9 @@
                     <input class="input" type="text" name="role" id="role" placeholder="Rol"
                     minlength="5" maxlength="40" required>
                 </div>
-                </fieldset>
                 <br>
+                <hr>
 
-                <fieldset>
-                    <legend>Informacion de registro</legend>
                 <div > <!-- informacion de registro (septima linea)-->
                 <label for="registration_date">Fecha de registro</label>
                 <input class="input" type="date" name="registration_date" id="registration_date">
@@ -164,7 +152,8 @@
                 <label for="activation_date">Fecha de activación</label>
                 <input class="input" type="date" name="activation_date" id="activation_date" >
                 </div>
-                </fieldset>
+                <br>
+                <hr>
 
             </fieldset>
 

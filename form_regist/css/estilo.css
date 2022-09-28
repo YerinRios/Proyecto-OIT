@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form_class{
+    width: 400px;
+    height: 400px;
+    
+}
+
+.title{ 
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size:x-large;
+    color: #100F0F;
+
+}
+

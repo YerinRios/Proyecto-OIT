@@ -10,7 +10,25 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    margin-right: 500px;
+    
 }
 
+
+.title{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+
+}
+
+.label{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(56, 56, 56);
+}
+
+.input .select{
+    padding: 1em;
+    border-radius: 2px black;
+}
 
